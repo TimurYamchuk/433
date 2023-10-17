@@ -195,9 +195,3 @@ vector<string> HangmanGame::LoadWords(const string& filename) {
     return loadedWords;  // Возвращаем вектор загруженных слов.
 }
 
-int main() {
-    vector<string> words = LoadWords("words.txt");  // Загрузка слов из файла.
-    HangmanGame game(words);  // Создание объекта игры.
-    game.Run();  // Запуск игры.
-    return 0;
-}
