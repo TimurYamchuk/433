@@ -8,6 +8,7 @@
 using namespace std;
 
 int main() {
+    setlocate(0,"ru");
     HangmanGame words = words.LoadWords("words.txt");  // Загрузка слов из файла.
     HangmanGame game(words);  // Создание объекта игры.
     game.Run();  // Запуск игры.
